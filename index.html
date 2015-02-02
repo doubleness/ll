@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lubomir Labaj</title>
+	<meta name="description" content="Place to showcase my work and experiments">
+	<meta name="keywords" content="portfolio,HTML,CSS,JavaScript,HTML5,design,mobile,responsive,photography,development">
+	<meta name="author" content="Lubomir Labaj">
+
+	<style>
+		html, body { height: 100%; width: 100%; margin: 0; padding: 0; color: #ddd;}
+		ul, li { margin: 0; padding: 0; }
+		.hide-all {visibility: hidden; display: none;}
+		.wrapper-all { height: 100%; width: 100%; }
+		#doubleness-logo { display: table-cell; vertical-align: middle; text-align: center; }
+		#doubleness-logo img {height: 25%;}
+		#concent-above { display: table; height: 100%; width: 100%; position:absolute; top:0; left:0; z-index: 100;}
+		.content-bg { height: 100%; width: 100%; position:absolute; top:0; left:0; background-color: #32c7d9; z-index: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border: 20px solid white;}
+		.wrapper-all #doubleness-logo { opacity: 0; }
+	</style>
+
+</head>
+<body>
+
+	<div class="loader">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+			<path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+			<animateTransform attributeType="xml"
+				attributeName="transform"
+				type="rotate"
+				from="0 25 25"
+				to="360 25 25"
+				dur="0.6s"
+				repeatCount="indefinite"/>
+			</path>
+		</svg>
+	</div>
+
+	<div class="wrapper-all hide-all">
+
+		<div id="concent-above">
+			<div id="doubleness-logo">
+				<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+					 width="200px" height="200px" viewBox="0 0 200 200" xml:space="preserve">
+					<!-- <polygon fill="#2699a7" points="99.938,180.146 155.229,32.979 130.563,32.979 75.271,180.146 "/>
+					<polygon fill="#2699a7" points="130.729,25.854 106.063,25.854 50.771,173.021 75.438,173.021 "/> -->
+					<polygon fill="#fff" points="127.729,22.854 103.063,22.854 47.771,170.021 72.438,170.021 "/>
+					<polygon fill="#fff" points="96.938,177.146 152.229,29.979 127.563,29.979 72.271,177.146 "/>
+				</svg>
+			</div>
+		</div>
+
+		<div class="content-bg" id="gradient">
+
+		</div>
+
+	</div>
+
+
+	<link rel="stylesheet" type="text/css" href="css/ll.css">
+
+	<script type="text/javascript">
+		function downloadJSAtOnload() {
+			var element = document.createElement("script");
+			element.src = "js/start.js";
+			document.body.appendChild(element);
+		}
+		if (window.addEventListener)
+			window.addEventListener("load", downloadJSAtOnload, false);
+		else if (window.attachEvent)
+			window.attachEvent("onload", downloadJSAtOnload);
+		else window.onload = downloadJSAtOnload;
+	</script>
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.velocity.min.js"></script>
+
+</body>
+</html>
+
+

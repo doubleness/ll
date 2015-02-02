@@ -1,0 +1,105 @@
+// Core variables and mixins
+@import "ll/_ll-variables";
+@import "ll/_ll-mixins";
+
+// Pace loading styling
+// @import "ll/_ll-pace";
+
+// Core CSS
+// @import "ll/_ll-scaffolding";
+
+.loader {
+	position: absolute;
+	left: 20px;
+	top: 20px;	
+	width: 40px;
+	height: 40px;
+	z-index: 910;
+	padding: 10px;
+	opacity: 0.2;
+}
+
+.right-menu {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	color: black;
+	z-index: 900;
+	overflow: hidden;
+
+
+	.rightControlPlus {
+		width: 70px;
+		height: 70px;
+		// background-color: grey;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		z-index: 900;
+
+		.plus-icon {
+			margin: 19px;
+			width: 32px;
+			height: 32px;
+			// background-color: red;
+			position: relative;
+
+			.hor {
+				position: absolute;
+				left:0;
+				top:13px;
+				width: 29px;
+				height: 3px;
+				background-color: white;
+			}
+
+			.ver {
+				position: absolute;
+				top:0;
+				left:13px;
+				height: 29px;
+				width: 3px;
+				background-color: white;
+			}
+		}
+
+	}
+
+	.rightControlMinus {
+		width: 50px;
+		height: 50px;
+		background-color: grey;
+		z-index: 904;
+		margin: 20px;
+	}
+
+	.right-menu-overlay{
+		z-index: 901;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: white;
+		opacity: 0.1;
+	}
+
+	.right-menu-content {
+		height: 100%;
+		position: absolute;
+		right: 0;
+		width: 300px;
+		background-color: white;
+		z-index: 902;
+	}
+
+	.right-menu-content-text {
+		margin: 20px;
+	}
+}
+
+body {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
